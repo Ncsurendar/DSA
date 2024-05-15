@@ -14,4 +14,3 @@ public class SmallestNumber {
         System.out.println(min);
     }
 }
-
