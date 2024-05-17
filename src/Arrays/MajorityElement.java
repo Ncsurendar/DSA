@@ -3,11 +3,7 @@ package Arrays;
 public class MajorityElement {
 
                                                         // Moore’s Voting Algorithm
-    //If the array contains a majority element, its occurrence must be greater than the floor(N/2). 
-    //Now, we can say that the count of minority elements and majority elements is equal up to a certain point in the array.
-    //So when we traverse through the array we try to keep track of the count of elements and the element itself for which we are tracking the count. 
-
-    //After traversing the whole array, we will check the element stored in the variable.
+  
     //Initialize 2 variables:
     //Count –  for tracking the count of element
     //Element – for which element we are counting
