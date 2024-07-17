@@ -11,7 +11,7 @@ class Node{
     }
 }
 
-class Stack{
+class Stack2{
     Node top;
     int size = 0;
     public void push(int x)
@@ -59,7 +59,7 @@ class Stack{
 
 public class ImplementStackUsingLL {
     public static void main(String[] args) {
-        Stack stack = new Stack();
+        Stack2 stack = new Stack2();
 
         stack.push(10);
         stack.push(20);

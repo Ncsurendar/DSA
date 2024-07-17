@@ -39,7 +39,14 @@ public class FourSum {
             }
         }
 
-        return ans;
+        for(int i=0; i<=ans.size(); i++)
+        {
+            for(int j=0; j<=ans.size(); j++)
+            {
+                System.out.print(ans.get(i).get(j) + " ");
+            }
+            System.out.println();
+        }
 
     }
 }

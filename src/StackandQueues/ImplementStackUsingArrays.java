@@ -2,7 +2,7 @@ package StackandQueues;
 
 public class ImplementStackUsingArrays {
     public static void main(String[] args) {
-        stack s = new stack();
+        stack1 s = new stack1();
         s.push(6);
         s.push(3);
         s.push(7);
@@ -13,7 +13,7 @@ public class ImplementStackUsingArrays {
         System.out.println("Top of the stack after deleting an element " + s.top());
     }
 
-    static class stack{
+    static class stack1{
         int size = 10000;
         int []arr = new int[size];
         int top = -1;

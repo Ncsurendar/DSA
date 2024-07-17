@@ -5,7 +5,7 @@ import java.util.Queue;
 
 public class ImplementStackUsingQueue {
     public static void main(String[] args) {
-        stack s = new stack();
+        stack3 s = new stack3();
         s.push(3);
         s.push(2);
         s.push(4);
@@ -18,7 +18,7 @@ public class ImplementStackUsingQueue {
     }
 }
 
-class stack {
+class stack3 {
     Queue<Integer> q = new LinkedList<>();
     void push(int x)
     {

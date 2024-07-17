@@ -7,25 +7,17 @@ import java.util.List;
 
 public class MergeOverLappingIntervals {
 
-    public static List<List<Integer>> mergeOverlappingIntervals(int[][] arr)
+    public static List<int[]> mergeOverlappingIntervals(List<int[]> intervals)
     {
-        int n = arr.length;
-        Arrays.sort(arr, new Comparator<int[]>() {
-            @Override
-            public int compare(int[] a, int[] b) {
-                return a[0] - b[0];
+        intervals.sort(Comparator.comparingInt(a -> a[0]));
+        List<int[]> ans = new ArrayList<>();
+
+        for (int[] interval : intervals) {
+            if (ans.isEmpty() || interval[0] > ans.get(ans.size() - 1)[1]) {
+                ans.add(interval);
             }
-        });
-        List<List<Integer>> ans = new ArrayList<>();
-        for(int i=0; i<n; i++)
-        {
-            if(ans.isEmpty() || arr[i][0] > ans.get(ans.size()-1).get(1))
-            {
-                ans.add(Arrays.asList(arr[i][0],arr[i][1]));
-            }
-            else
-            {
-                ans.get(ans.size()-1).set(1,Math.max(ans.get(ans.size()-1).get(1), arr[i][1]));
+            else {
+                ans.get(ans.size() - 1)[1] = Math.max(ans.get(ans.size() - 1)[1], interval[1]);
             }
         }
         return ans;
@@ -33,11 +25,16 @@ public class MergeOverLappingIntervals {
 
 
     public static void main(String[] args) {
-        int[][] arr = {{1, 3}, {8, 10}, {2, 6}, {15, 18}};
-        List<List<Integer>> ans = mergeOverlappingIntervals(arr);
+        List<int[]> intervals = Arrays.asList(
+                new int[]{1, 3},
+                new int[]{8, 10},
+                new int[]{2, 6},
+                new int[]{15, 18}
+        );
+        List<int[]> result = mergeOverlappingIntervals(intervals);
         System.out.print("The merged intervals are: \n");
-        for (List<Integer> it : ans) {
-            System.out.print("[" + it.get(0) + ", " + it.get(1) + "] ");
+        for (int[] interval: result) {
+            System.out.println("[" + interval[0] + ", " + interval[1] + "]");
         }
         System.out.println();
     }
