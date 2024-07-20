@@ -1,10 +1,10 @@
 package StackandQueues;
 
-class Node{
+class Node1{
     int data;
-    Node next;
+    Node1 next;
 
-    Node(int data)
+    Node1(int data)
     {
         this.data = data;
         this.next = null;
@@ -12,11 +12,11 @@ class Node{
 }
 
 class Stack2{
-    Node top;
+    Node1 top;
     int size = 0;
     public void push(int x)
     {
-        Node temp = new Node(x);
+        Node1 temp = new Node1(x);
         temp.next = top;
         top = temp;
         size += 1;
@@ -47,7 +47,7 @@ class Stack2{
 
     public void display()
     {
-        Node temp = top;
+        Node1 temp = top;
         while(temp != null)
         {
             System.out.println(temp.data + " ");

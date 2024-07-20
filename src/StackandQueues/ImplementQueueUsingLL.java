@@ -1,13 +1,13 @@
 package StackandQueues;
 
 class Queue1{
-    private Node front, rear;
+    private Node1 front, rear;
     public Queue1() {
         front = rear = null;
     }
     public void enqueue(int x)
     {
-        Node newNode = new Node(x);
+        Node1 newNode = new Node1(x);
         if(rear == null)
         {
             front = rear = newNode;
@@ -52,7 +52,7 @@ class Queue1{
             System.out.println("Queue is empty");
             return;
         }
-        Node temp = front;
+        Node1 temp = front;
         while(temp != null)
         {
             System.out.println(temp.data + " ");
