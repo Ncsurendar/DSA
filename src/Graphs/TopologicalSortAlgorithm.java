@@ -43,6 +43,10 @@ public class TopologicalSortAlgorithm {
         return ans;
     }
 
+    // Topological sorting of a directed graph is a linear ordering
+    //The graph must be directed.
+    //The graph must be acyclic, meaning it should not contain any cycles.
+
     public static void main(String[] args) {
         int V = 6;
         ArrayList<ArrayList<Integer>> adj = new ArrayList<>(V);
