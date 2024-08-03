@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class L1IntroductionToDP {
 
-    static int f(int n, int[] dp)   // Using Memoization Technique(Top To Down) where storing all the values in the array dp.
+    static int f(int n, int[] dp)   // Using Memoization Technique(Top To Down) where storing all the values in the array dp
     {
         if(n <= 1) return n;
         if(dp[n] != -1) return dp[n];
