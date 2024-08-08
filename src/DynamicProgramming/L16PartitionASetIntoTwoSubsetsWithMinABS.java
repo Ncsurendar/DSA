@@ -39,7 +39,6 @@ public class L16PartitionASetIntoTwoSubsetsWithMinABS {
         return mini;
     }
 
-
     public static void main(String[] args) {
         int[] nums = {1, 2, 3, 9};
         int result = minimumDifference(nums);
