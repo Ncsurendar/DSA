@@ -1,6 +1,6 @@
 package DynamicProgramming;
 
-public class L7NinjaTraining {
+public class L07NinjaTraining {
 
     static int ninjaTraining(int n, int[][] points)
     {

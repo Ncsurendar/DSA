@@ -2,7 +2,7 @@ package DynamicProgramming;
 
 import java.util.Arrays;
 
-public class L1IntroductionToDP {
+public class L01IntroductionToDP {
 
     static int f(int n, int[] dp)   // Using Memoization Technique(Top To Down) where storing all the values in the array dp
     {

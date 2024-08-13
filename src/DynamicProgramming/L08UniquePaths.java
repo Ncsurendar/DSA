@@ -1,6 +1,6 @@
 package DynamicProgramming;
 
-public class L8UniquePaths {
+public class L08UniquePaths {
 
     static int countWays(int m, int n)
     {

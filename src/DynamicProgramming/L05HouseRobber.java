@@ -1,6 +1,6 @@
 package DynamicProgramming;
 
-public class L5HouseRobber {
+public class L05HouseRobber {
 
     static int solve(int n, int[] arr)
     {

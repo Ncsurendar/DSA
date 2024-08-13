@@ -1,6 +1,6 @@
 package DynamicProgramming;
 
-public class L9UniquePathII {
+public class L09UniquePathII {
 
     static int findUnique(int[][] obstacleGrid)
     {

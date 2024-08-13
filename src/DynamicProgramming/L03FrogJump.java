@@ -1,6 +1,6 @@
 package DynamicProgramming;
 
-public class L3FrogJump {
+public class L03FrogJump {
     public static void main(String[] args) {
         int[] height ={30,10,60,10,60,50};
         int n = height.length;

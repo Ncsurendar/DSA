@@ -1,6 +1,6 @@
 package DynamicProgramming;
 
-public class L2ClimbingStairs {
+public class L02ClimbingStairs {
 
     static int climbStairs(int n)
     {

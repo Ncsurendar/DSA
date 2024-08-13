@@ -1,7 +1,7 @@
 package DynamicProgramming;
 import java.util.*;
 
-public class L6HouseRobberII {
+public class L06HouseRobberII {
 
     static long solve(ArrayList<Integer> arr){
         int n = arr.size();
